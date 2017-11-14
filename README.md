@@ -1,18 +1,37 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+The program takes a json file, and returns a formatted json file in console.
 
 # Quickstart
 
-[TODO]
+You need to download and install python3 if you already haven't: http://python.org .
 
 Example of script launch on Linux, Python 3.5:
 
 ```bash
 
 $ python pprint_json.py <path to file>
-# TODO add output example
-
+{
+    "title": "Person",
+    "type": "object",
+    "properties": {
+        "firstName": {
+            "type": "string"
+        },
+        "lastName": {
+            "type": "string"
+        },
+        "age": {
+            "description": "Age in years",
+            "type": "integer",
+            "minimum": 0
+        }
+    },
+    "required": [
+        "firstName",
+        "lastName"
+    ]
+}
 ```
 
 # Project Goals
