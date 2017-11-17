@@ -19,9 +19,9 @@ def main():
     try:
         loaded_data = load_json_data(sys.argv[1])
     except FileNotFoundError as error:
-        print(error)
+        exit(error)
     except json.JSONDecodeError as error:
-        print(error)
+        exit(error)
     else:
         pretty_print_json(loaded_data)
 
